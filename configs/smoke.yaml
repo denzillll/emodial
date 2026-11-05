@@ -1,0 +1,40 @@
+# Tiny end-to-end run on CPU with random tiny models and fixture data (used by tests/CI).
+inherit: default.yaml
+paths:
+  raw: tests/fixtures/raw
+  processed: .smoke/processed
+  cache: .smoke/cache
+  outputs: .smoke/outputs
+data:
+  max_train_examples: 64
+  max_valid_examples: 16
+recogniser:
+  model_name: .smoke/tiny/roberta
+  batch_size: 8
+  epochs: 1
+  fp16: false
+generator:
+  model_name: .smoke/tiny/gpt2
+  max_context_tokens: 64
+  max_response_tokens: 16
+  batch_size: 4
+  grad_accum: 1
+  eval_batch_size: 8
+  fp16: false
+  log_every: 5
+  eval_every_epochs: 1
+  base: {epochs: 1, lr: 1.0e-3}
+  variant: {epochs: 1, lr: 1.0e-3}
+  seeds: [42]
+generation:
+  num_beams: 2
+  max_new_tokens: 8
+  batch_size: 4
+eval:
+  judge: .smoke/tiny/roberta
+  max_examples_per_source: 12
+  swap_examples: 8
+human:
+  raters: [r1, r2]
+  n_rating: 4
+  n_pairwise: 4

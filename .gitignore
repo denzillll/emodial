@@ -1,0 +1,20 @@
+# data and model outputs (large / licensed: never commit)
+/data/
+/outputs/
+/.smoke/
+*.pt
+*.safetensors
+*.bin
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+# os / editors
+.DS_Store
+.vscode/
+.idea/
+# human-eval sheets contain the answer key
+**/KEY_do_not_share_with_raters.json

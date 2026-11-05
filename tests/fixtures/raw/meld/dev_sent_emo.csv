@@ -1,0 +1,28 @@
+Sr No.,Utterance,Speaker,Emotion,Sentiment,Dialogue_ID,Utterance_ID,Season,Episode,StartTime,EndTime
+1,"But I just found out I passed after all!",Ross,sadness,neutral,0,0,1,1,00:00:01,00:00:02
+2,"I'm sorry to hear that.",Ross,joy,neutral,0,1,1,1,00:00:01,00:00:02
+3,"That sounds really hard.",Ross,surprise,neutral,0,2,1,1,00:00:01,00:00:02
+4,"Oh wow, that's wonderful news!",Ross,joy,neutral,0,3,1,1,00:00:01,00:00:02
+5,"My dog has been sick all week.",Ross,anger,neutral,1,0,1,1,00:00:01,00:00:02
+6,"Oh wow, that's wonderful news!",Ross,surprise,neutral,1,1,1,1,00:00:01,00:00:02
+7,"Then they called back and offered me the role!",Ross,fear,neutral,1,2,1,1,00:00:01,00:00:02
+8,"Congratulations, you deserve it!",Ross,disgust,neutral,1,3,1,1,00:00:01,00:00:02
+9,"But I just found out I passed after all!",Ross,sadness,neutral,1,4,1,1,00:00:01,00:00:02
+10,"Actually he is feeling much better now!",Ross,surprise,neutral,2,0,1,1,00:00:01,00:00:02
+11,"Oh wow, that's wonderful news!",Ross,joy,neutral,2,1,1,1,00:00:01,00:00:02
+12,"I did not get the job I wanted.",Ross,neutral,neutral,2,2,1,1,00:00:01,00:00:02
+13,"How are you feeling about it now?",Ross,neutral,neutral,2,3,1,1,00:00:01,00:00:02
+14,"Then they called back and offered me the role!",Ross,surprise,neutral,3,0,1,1,00:00:01,00:00:02
+15,"I met some great people at a club yesterday.",Ross,joy,neutral,3,1,1,1,00:00:01,00:00:02
+16,"I'm sorry to hear that.",Ross,fear,neutral,3,2,1,1,00:00:01,00:00:02
+17,"But I just found out I passed after all!",Ross,sadness,neutral,3,3,1,1,00:00:01,00:00:02
+18,"I met some great people at a club yesterday.",Ross,fear,neutral,4,0,1,1,00:00:01,00:00:02
+19,"Then they called back and offered me the role!",Ross,joy,neutral,4,1,1,1,00:00:01,00:00:02
+20,"I met some great people at a club yesterday.",Ross,anger,neutral,4,2,1,1,00:00:01,00:00:02
+21,"How are you feeling about it now?",Ross,surprise,neutral,4,3,1,1,00:00:01,00:00:02
+22,"Actually he is feeling much better now!",Ross,anger,neutral,4,4,1,1,00:00:01,00:00:02
+23,"I failed my exam today.",Ross,anger,neutral,5,0,1,1,00:00:01,00:00:02
+24,"But I just found out I passed after all!",Ross,joy,neutral,5,1,1,1,00:00:01,00:00:02
+25,"How are you feeling about it now?",Ross,anger,neutral,5,2,1,1,00:00:01,00:00:02
+26,"I failed my exam today.",Ross,surprise,neutral,5,3,1,1,00:00:01,00:00:02
+27,"I feel so lonely since moving here.",Ross,neutral,neutral,5,4,1,1,00:00:01,00:00:02

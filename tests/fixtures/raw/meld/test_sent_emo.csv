@@ -1,0 +1,24 @@
+Sr No.,Utterance,Speaker,Emotion,Sentiment,Dialogue_ID,Utterance_ID,Season,Episode,StartTime,EndTime
+1,"I met some great people at a club yesterday.",Ross,anger,neutral,0,0,1,1,00:00:01,00:00:02
+2,"I failed my exam today.",Ross,disgust,neutral,0,1,1,1,00:00:01,00:00:02
+3,"I'm sorry to hear that.",Ross,neutral,neutral,0,2,1,1,00:00:01,00:00:02
+4,"Oh wow, that's wonderful news!",Ross,disgust,neutral,0,3,1,1,00:00:01,00:00:02
+5,"Oh wow, that's wonderful news!",Ross,fear,neutral,1,0,1,1,00:00:01,00:00:02
+6,"Oh wow, that's wonderful news!",Ross,anger,neutral,1,1,1,1,00:00:01,00:00:02
+7,"I failed my exam today.",Ross,sadness,neutral,1,2,1,1,00:00:01,00:00:02
+8,"My dog has been sick all week.",Ross,surprise,neutral,2,0,1,1,00:00:01,00:00:02
+9,"I failed my exam today.",Ross,sadness,neutral,2,1,1,1,00:00:01,00:00:02
+10,"Oh wow, that's wonderful news!",Ross,fear,neutral,2,2,1,1,00:00:01,00:00:02
+11,"How are you feeling about it now?",Ross,joy,neutral,3,0,1,1,00:00:01,00:00:02
+12,"I did not get the job I wanted.",Ross,disgust,neutral,3,1,1,1,00:00:01,00:00:02
+13,"That sounds really hard.",Ross,sadness,neutral,3,2,1,1,00:00:01,00:00:02
+14,"I feel so lonely since moving here.",Ross,neutral,neutral,3,3,1,1,00:00:01,00:00:02
+15,"I met some great people at a club yesterday.",Ross,fear,neutral,4,0,1,1,00:00:01,00:00:02
+16,"Actually he is feeling much better now!",Ross,anger,neutral,4,1,1,1,00:00:01,00:00:02
+17,"I did not get the job I wanted.",Ross,sadness,neutral,4,2,1,1,00:00:01,00:00:02
+18,"Then they called back and offered me the role!",Ross,fear,neutral,4,3,1,1,00:00:01,00:00:02
+19,"Then they called back and offered me the role!",Ross,joy,neutral,5,0,1,1,00:00:01,00:00:02
+20,"I met some great people at a club yesterday.",Ross,fear,neutral,5,1,1,1,00:00:01,00:00:02
+21,"I did not get the job I wanted.",Ross,surprise,neutral,5,2,1,1,00:00:01,00:00:02
+22,"Actually he is feeling much better now!",Ross,joy,neutral,5,3,1,1,00:00:01,00:00:02
+23,"I feel so lonely since moving here.",Ross,joy,neutral,5,4,1,1,00:00:01,00:00:02

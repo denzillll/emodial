@@ -1,0 +1,76 @@
+Sr No.,Utterance,Speaker,Emotion,Sentiment,Dialogue_ID,Utterance_ID,Season,Episode,StartTime,EndTime
+1,"Actually he is feeling much better now!",Ross,sadness,neutral,0,0,1,1,00:00:01,00:00:02
+2,"I met some great people at a club yesterday.",Ross,sadness,neutral,0,1,1,1,00:00:01,00:00:02
+3,"But I just found out I passed after all!",Ross,surprise,neutral,0,2,1,1,00:00:01,00:00:02
+4,"Actually he is feeling much better now!",Ross,joy,neutral,1,0,1,1,00:00:01,00:00:02
+5,"That sounds really hard.",Ross,neutral,neutral,1,1,1,1,00:00:01,00:00:02
+6,"My dog has been sick all week.",Ross,surprise,neutral,1,2,1,1,00:00:01,00:00:02
+7,"That sounds really hard.",Ross,sadness,neutral,1,3,1,1,00:00:01,00:00:02
+8,"I did not get the job I wanted.",Ross,anger,neutral,1,4,1,1,00:00:01,00:00:02
+9,"I did not get the job I wanted.",Ross,disgust,neutral,2,0,1,1,00:00:01,00:00:02
+10,"I feel so lonely since moving here.",Ross,sadness,neutral,2,1,1,1,00:00:01,00:00:02
+11,"I'm sorry to hear that.",Ross,joy,neutral,2,2,1,1,00:00:01,00:00:02
+12,"Congratulations, you deserve it!",Ross,joy,neutral,3,0,1,1,00:00:01,00:00:02
+13,"But I just found out I passed after all!",Ross,sadness,neutral,3,1,1,1,00:00:01,00:00:02
+14,"Then they called back and offered me the role!",Ross,fear,neutral,3,2,1,1,00:00:01,00:00:02
+15,"I did not get the job I wanted.",Ross,surprise,neutral,4,0,1,1,00:00:01,00:00:02
+16,"I failed my exam today.",Ross,anger,neutral,4,1,1,1,00:00:01,00:00:02
+17,"My dog has been sick all week.",Ross,fear,neutral,4,2,1,1,00:00:01,00:00:02
+18,"I did not get the job I wanted.",Ross,anger,neutral,5,0,1,1,00:00:01,00:00:02
+19,"But I just found out I passed after all!",Ross,surprise,neutral,5,1,1,1,00:00:01,00:00:02
+20,"Then they called back and offered me the role!",Ross,fear,neutral,5,2,1,1,00:00:01,00:00:02
+21,"That sounds really hard.",Ross,anger,neutral,6,0,1,1,00:00:01,00:00:02
+22,"But I just found out I passed after all!",Ross,fear,neutral,6,1,1,1,00:00:01,00:00:02
+23,"Actually he is feeling much better now!",Ross,neutral,neutral,6,2,1,1,00:00:01,00:00:02
+24,"I met some great people at a club yesterday.",Ross,fear,neutral,7,0,1,1,00:00:01,00:00:02
+25,"Actually he is feeling much better now!",Ross,fear,neutral,7,1,1,1,00:00:01,00:00:02
+26,"I'm sorry to hear that.",Ross,neutral,neutral,7,2,1,1,00:00:01,00:00:02
+27,"Then they called back and offered me the role!",Ross,neutral,neutral,8,0,1,1,00:00:01,00:00:02
+28,"Then they called back and offered me the role!",Ross,fear,neutral,8,1,1,1,00:00:01,00:00:02
+29,"Actually he is feeling much better now!",Ross,anger,neutral,8,2,1,1,00:00:01,00:00:02
+30,"I feel so lonely since moving here.",Ross,sadness,neutral,8,3,1,1,00:00:01,00:00:02
+31,"I met some great people at a club yesterday.",Ross,neutral,neutral,9,0,1,1,00:00:01,00:00:02
+32,"I did not get the job I wanted.",Ross,disgust,neutral,9,1,1,1,00:00:01,00:00:02
+33,"My dog has been sick all week.",Ross,sadness,neutral,9,2,1,1,00:00:01,00:00:02
+34,"My dog has been sick all week.",Ross,surprise,neutral,9,3,1,1,00:00:01,00:00:02
+35,"How are you feeling about it now?",Ross,joy,neutral,10,0,1,1,00:00:01,00:00:02
+36,"Congratulations, you deserve it!",Ross,fear,neutral,10,1,1,1,00:00:01,00:00:02
+37,"I met some great people at a club yesterday.",Ross,anger,neutral,10,2,1,1,00:00:01,00:00:02
+38,"I did not get the job I wanted.",Ross,disgust,neutral,10,3,1,1,00:00:01,00:00:02
+39,"Then they called back and offered me the role!",Ross,anger,neutral,10,4,1,1,00:00:01,00:00:02
+40,"I feel so lonely since moving here.",Ross,anger,neutral,11,0,1,1,00:00:01,00:00:02
+41,"Actually he is feeling much better now!",Ross,surprise,neutral,11,1,1,1,00:00:01,00:00:02
+42,"I did not get the job I wanted.",Ross,sadness,neutral,11,2,1,1,00:00:01,00:00:02
+43,"Oh wow, that's wonderful news!",Ross,fear,neutral,12,0,1,1,00:00:01,00:00:02
+44,"My dog has been sick all week.",Ross,anger,neutral,12,1,1,1,00:00:01,00:00:02
+45,"Congratulations, you deserve it!",Ross,joy,neutral,12,2,1,1,00:00:01,00:00:02
+46,"But I just found out I passed after all!",Ross,neutral,neutral,12,3,1,1,00:00:01,00:00:02
+47,"I met some great people at a club yesterday.",Ross,surprise,neutral,13,0,1,1,00:00:01,00:00:02
+48,"I met some great people at a club yesterday.",Ross,neutral,neutral,13,1,1,1,00:00:01,00:00:02
+49,"I feel so lonely since moving here.",Ross,sadness,neutral,13,2,1,1,00:00:01,00:00:02
+50,"My dog has been sick all week.",Ross,disgust,neutral,13,3,1,1,00:00:01,00:00:02
+51,"Oh wow, that's wonderful news!",Ross,sadness,neutral,13,4,1,1,00:00:01,00:00:02
+52,"That sounds really hard.",Ross,joy,neutral,14,0,1,1,00:00:01,00:00:02
+53,"Then they called back and offered me the role!",Ross,fear,neutral,14,1,1,1,00:00:01,00:00:02
+54,"Congratulations, you deserve it!",Ross,anger,neutral,14,2,1,1,00:00:01,00:00:02
+55,"My dog has been sick all week.",Ross,fear,neutral,14,3,1,1,00:00:01,00:00:02
+56,"I met some great people at a club yesterday.",Ross,disgust,neutral,14,4,1,1,00:00:01,00:00:02
+57,"I'm sorry to hear that.",Ross,disgust,neutral,15,0,1,1,00:00:01,00:00:02
+58,"Then they called back and offered me the role!",Ross,sadness,neutral,15,1,1,1,00:00:01,00:00:02
+59,"Oh wow, that's wonderful news!",Ross,neutral,neutral,15,2,1,1,00:00:01,00:00:02
+60,"But I just found out I passed after all!",Ross,fear,neutral,16,0,1,1,00:00:01,00:00:02
+61,"I failed my exam today.",Ross,neutral,neutral,16,1,1,1,00:00:01,00:00:02
+62,"But I just found out I passed after all!",Ross,anger,neutral,16,2,1,1,00:00:01,00:00:02
+63,"That sounds really hard.",Ross,fear,neutral,17,0,1,1,00:00:01,00:00:02
+64,"Then they called back and offered me the role!",Ross,anger,neutral,17,1,1,1,00:00:01,00:00:02
+65,"My dog has been sick all week.",Ross,fear,neutral,17,2,1,1,00:00:01,00:00:02
+66,"But I just found out I passed after all!",Ross,sadness,neutral,17,3,1,1,00:00:01,00:00:02
+67,"But I just found out I passed after all!",Ross,disgust,neutral,17,4,1,1,00:00:01,00:00:02
+68,"I feel so lonely since moving here.",Ross,surprise,neutral,18,0,1,1,00:00:01,00:00:02
+69,"My dog has been sick all week.",Ross,neutral,neutral,18,1,1,1,00:00:01,00:00:02
+70,"My dog has been sick all week.",Ross,disgust,neutral,18,2,1,1,00:00:01,00:00:02
+71,"But I just found out I passed after all!",Ross,sadness,neutral,18,3,1,1,00:00:01,00:00:02
+72,"I'm sorry to hear that.",Ross,sadness,neutral,18,4,1,1,00:00:01,00:00:02
+73,"I'm sorry to hear that.",Ross,disgust,neutral,19,0,1,1,00:00:01,00:00:02
+74,"I feel so lonely since moving here.",Ross,disgust,neutral,19,1,1,1,00:00:01,00:00:02
+75,"I did not get the job I wanted.",Ross,neutral,neutral,19,2,1,1,00:00:01,00:00:02

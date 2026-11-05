@@ -1,0 +1,12 @@
+[project]
+name = "emodial"
+version = "0.1.0"
+description = "EmoDial: emotion-aware empathetic dialogue with an Emotion Transition Gate (CS425 G1T1)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["emodial*"]
+
+[tool.pytest.ini_options]
+markers = ["slow: end-to-end smoke run of every script"]
+testpaths = ["tests"]

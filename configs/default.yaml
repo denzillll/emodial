@@ -1,0 +1,66 @@
+# EmoDial default configuration (full runs on Colab T4 / SCIS GPU).
+# Override anything on the command line, e.g.:  python scripts/04_train_generator.py --variant etg generator.batch_size=4
+seed: 42
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  cache: data/cache
+  outputs: outputs
+
+data:
+  context_turns: 3            # last 3 turns as generator context
+  esconv_split_seed: 42       # ESConv has no official split: fixed 70/15/15
+  max_train_examples: null    # e.g. 2000 for a quick debug run
+  max_valid_examples: 2000    # validation subset used for checkpoint selection
+  sources: [ed, esconv]
+
+recogniser:
+  model_name: roberta-base
+  max_len: 128
+  batch_size: 32
+  eval_batch_size: 128
+  lr: 2.0e-5
+  epochs: 5
+  patience: 2
+  fp16: true
+
+generator:
+  model_name: microsoft/DialoGPT-small
+  m: 4                        # number of soft-prompt vectors
+  max_context_tokens: 256
+  max_response_tokens: 64
+  batch_size: 8
+  grad_accum: 2               # effective batch 16
+  eval_batch_size: 16
+  prompt_lr: 1.0e-3           # learning rate for ETG / static prompt parameters
+  warmup_ratio: 0.06
+  fp16: true
+  log_every: 100
+  eval_every_epochs: 0.5
+  base:                       # stage 1: shared B0 checkpoint on ED + ESConv
+    epochs: 3
+    lr: 5.0e-5
+  variant:                    # stage 2: every system continues from the shared checkpoint
+    epochs: 1
+    lr: 5.0e-5
+  seeds: [42, 43]
+
+generation:
+  num_beams: 4
+  no_repeat_ngram_size: 3
+  max_new_tokens: 40
+  early_stopping: true
+  batch_size: 16
+
+eval:
+  judge: j-hartmann/emotion-english-distilroberta-base
+  negative_threshold: 0.5
+  shift_quantile: 0.75        # tau = this quantile of non-zero ||Delta||_1 on validation
+  max_examples_per_source: 1000   # fixed test subset per dataset for generation-based metrics
+  swap_examples: 300
+
+human:
+  raters: [denzil, stevson, yorkkhang, mikolaj, aleksandra]
+  n_rating: 20
+  n_pairwise: 50
