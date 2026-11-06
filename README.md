@@ -70,6 +70,100 @@ pytest -q                      # ~1-2 min: unit tests + full pipeline on tiny mo
 bash scripts/run_all.sh        # full run (needs a GPU)
 ```
 
+For a full run on your own computer, follow the next section.
+
+### On your own GPU (Windows or Linux, NVIDIA)
+
+You need an NVIDIA GPU with at least 4 GB of memory (8 GB+ is comfortable) and
+**Python 3.11 or 3.12**. Without a CUDA GPU the code silently falls back to the CPU,
+which takes days. Apple Silicon Macs are not supported yet: use Colab instead.
+
+**1. Check the GPU driver**
+
+```bash
+nvidia-smi                     # should list your GPU and its memory
+```
+
+If the command is not found, install the latest NVIDIA driver first.
+
+**2. Set up the project**
+
+```bash
+git clone https://github.com/denzillll/emodial.git
+cd emodial
+python -m venv .venv
+.venv\Scripts\activate         # Windows (PowerShell). Linux/macOS: source .venv/bin/activate
+pip install torch --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt
+```
+
+Install PyTorch from the CUDA link **before** `requirements.txt`. A plain
+`pip install torch` on Windows installs the CPU-only build.
+
+**3. Confirm PyTorch can see the GPU**
+
+```bash
+python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+pytest -q
+```
+
+The first command must print `True` and your GPU's name. All tests should pass.
+
+**4. Run the pipeline**
+
+`scripts/run_all.sh` needs bash, so on Windows run the steps one by one (or use Git Bash / WSL).
+The commands below are the quick version for the presentation: one seed and a 20k-example
+training subset (~3 h of training on a T4-class GPU). For the final report, drop
+`data.max_train_examples=20000` and repeat steps 4b–4c with `--seed 43`.
+
+```powershell
+# a) data, recogniser, emotion cache
+python scripts/01_prepare_data.py
+python scripts/02_train_recogniser.py
+python scripts/03_cache_emotions.py
+
+# b) shared base checkpoint
+python scripts/04_train_generator.py --stage base data.max_train_examples=20000
+
+# c) the five systems: train, then generate replies (+ swap test)
+foreach ($V in "b0","b1","etg_nodelta","etg_nogate","etg") {
+  python scripts/04_train_generator.py --variant $V --seed 42 data.max_train_examples=20000
+  python scripts/05_generate.py --variant $V --seed 42 --swap
+}
+
+# d) evaluation and human-evaluation sheets
+python scripts/06_evaluate.py
+python scripts/07_human_eval.py make
+```
+
+The same loop in bash (Linux, Git Bash, WSL):
+
+```bash
+for V in b0 b1 etg_nodelta etg_nogate etg; do
+  python scripts/04_train_generator.py --variant $V --seed 42 data.max_train_examples=20000
+  python scripts/05_generate.py --variant $V --seed 42 --swap
+done
+```
+
+**5. If you see "CUDA out of memory"**
+
+Add these overrides to the training and generation commands. They keep the effective
+batch size at 16, so results stay comparable; training is just a bit slower.
+
+```bash
+generator.batch_size=4 generator.grad_accum=4 generator.eval_batch_size=8 recogniser.batch_size=16 generation.batch_size=8
+```
+
+**6. Practical tips**
+
+- Keep the computer plugged in and stop it from sleeping during long runs
+  (Windows: Settings → System → Power → Screen and sleep → Never).
+- Each step saves its output, so if something stops you can rerun just that step.
+- When you finish, copy `outputs/` and `data/cache/` to the shared Drive folder so the rest
+  of the group can run their steps.
+- If a dataset download fails, see [Data](#data) for where to put the files by hand, then
+  run `python scripts/01_prepare_data.py --no-download`.
+
 ## The pipeline
 
 | Step | Command | Owner | Produces |
